@@ -1,0 +1,15 @@
+services:
+  star-chart:
+    build: .
+    container_name: star-chart
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    volumes:
+      - star-chart-data:/app/server/data
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+
+volumes:
+  star-chart-data:

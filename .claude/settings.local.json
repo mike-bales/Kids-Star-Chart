@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(cd /c/Users/mikeb/Documents/projects/Kids-Star-Chart && npx --yes create-vite@latest client -- --template react-ts 2>&1)",
+      "Bash(cd /c/Users/mikeb/Documents/projects/Kids-Star-Chart && npm install 2>&1)",
+      "Bash(cd /c/Users/mikeb/Documents/projects/Kids-Star-Chart && npm install -w client tailwindcss @tailwindcss/vite react-router-dom @tanstack/react-query canvas-confetti howler lucide-react 2>&1)",
+      "Bash(cd /c/Users/mikeb/Documents/projects/Kids-Star-Chart && npm install -w client -D @types/canvas-confetti @types/howler 2>&1)",
+      "Bash(cd /c/Users/mikeb/Documents/projects/Kids-Star-Chart && npm install -w client react react-dom && npm install -w client -D @types/react @types/react-dom @vitejs/plugin-react 2>&1)",
+      "Bash(cd:*)",
+      "Bash(tail:*)",
+      "Bash(cd /c/Users/mikeb/Documents/projects/Kids-Star-Chart && npx -w server tsc --noEmit 2>&1)",
+      "Bash(cd /c/Users/mikeb/Documents/projects/Kids-Star-Chart && npm run dev 2>&1)",
+      "Bash(npx kill-port 3001)",
+      "Bash(lsof -ti:3001)",
+      "Bash(xargs kill -9)",
+      "Bash(netstat -ano)",
+      "Bash(xargs -I{} taskkill //PID {} //F)",
+      "Bash(cd /c/Users/mikeb/Documents/projects/Kids-Star-Chart && npx -w client tsc --noEmit 2>&1)"
+    ]
+  }
+}

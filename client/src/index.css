@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-star-gold: #FFD700;
+  --color-star-dark: #B8860B;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent pull-to-refresh on mobile */
+body {
+  overscroll-behavior-y: contain;
+}
+
+/* Large touch-friendly button base */
+.btn-touch {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+/* Star button bounce animation */
+@keyframes star-bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.animate-star-bounce {
+  animation: star-bounce 0.3s ease-in-out;
+}
+
+/* Star count increment animation */
+@keyframes star-pop {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-star-pop {
+  animation: star-pop 0.4s ease-out;
+}
+
+/* Progress bar fill animation */
+@keyframes fill-progress {
+  from { width: 0%; }
+}
+
+.animate-fill {
+  animation: fill-progress 0.8s ease-out;
+}
